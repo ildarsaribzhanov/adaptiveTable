@@ -36,81 +36,43 @@ a:hover {
 }
 
 
-.b_conteiner {
+.wrapper {
 	width: 100%;
 	min-height: 100%;
 	position: relative;
 	overflow: hidden;
 }
 
-.b_band {
+.band {
 	position: relative;
 	padding: 0 20px;
 	outline: 1px solid red;
 }
 
 /* header begin */
-.b_header {
+.header {
 	width: 100%;
 	height: 100px;
 	position: relative;
 	outline: 1px solid black;
 }
 
-.b_logo {
-	width: 200px;
-	height: 70px;
-	position: absolute;
-	left: 0;
-	top: 20px;
-	border: 1px dotted black;
-}
-
-/* menu begin */
-.b_menu {
-	position: absolute;
-	top: 20px;
-	left: 300px;
-}
-
-.b_menu ul {
-	position: relative;
-	overflow: hidden;
-	list-style: none;
-}
-
-.b_menu li {
-	float: left;
-	padding: 0 30px 0;
-}
-
-/* menu end */
-.f_search {
-	position: absolute;
-	top: 20px;
-	right: 0;
-}
-
-.email {
-	color: #000;
-}
-
 /* header end */
 
 /* main begin */
-.b_maincontent {
+.main-content {
 	min-height: 100px;
 	position: relative;
 	padding: 50px 0;
 	overflow: hidden;
 }
 
-.b_maincontent table {
+.main-content table {
 	width: 100%;
 	border-collapse: collapse;
 }
 
-.b_maincontent table th, .b_maincontent table td {
+.main-content table th, .main-content table td {
 	border: 1px solid #ccc;
 	position: relative;
 	padding: 10px;
@@ -119,13 +81,13 @@ a:hover {
 
 
 /* main end */
-.b_clear {
+.clear {
 	height: 100px;
 	clear: both;
 }
 
 /* footer begin */
-.b_footer {
+.footer {
 	max-width: 960px;
 	height: 100px;
 	position: relative;
@@ -133,28 +95,9 @@ a:hover {
 	outline: 1px solid black;
 }
 
-.b_copyright {
-	position: absolute;
-	right: 0;
-	top: 40px;
-}
-
-
-.b_contacts {
-	position: absolute;
-	left: 0;
-	top: 40px;
-}
-
 /* footer end */
 
-
-.table_wrap {
-	position: relative;
-	overflow: auto;
-}
-
-.table_adaptive {
+.table-adaptive {
 	width: 100%;
 	position: relative;
 	display: table;
@@ -162,14 +105,14 @@ a:hover {
 	box-sizing: border-box;
 }
 
-.table_adaptive_row {
+.table-adaptive__row {
 	width: 100%;
 	position: relative;
 	display: table-row;
 
 }
 
-.table_adaptive_cell {
+.table-adaptive__cell {
 	position: relative;
 	padding: 10px;
 	display: table-cell;
@@ -178,16 +121,16 @@ a:hover {
 	box-sizing: border-box;
 }
 
-.table_adaptive_row:first-child .table_adaptive_cell {
+.table-adaptive__row:first-child .table-adaptive__cell {
 	border-top: none;
 }
 
-.table_adaptive_cell:first-child {
+.table-adaptive__cell:first-child {
 	border-left: none;
 }
 
 @media all and (max-width: 800px) {
-	.table_adaptive, .table_adaptive_cell, .table_adaptive_row {
+	.table-adaptive, .table-adaptive__cell, .table-adaptive__row {
 		display: block;
 	}
 }

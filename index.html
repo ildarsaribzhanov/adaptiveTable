@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Учимся верстать</title>
+	<title>Адаптивные таблицы</title>
 	
 	<link rel="stylesheet" type="text/css" href="./css/style.css" />
 	
@@ -13,37 +13,20 @@
 </head>
 
 <body>
-<div class="b_conteiner">
+<div class="wrapper">
 	<!--band begin-->
-	<div class="b_band">
+	<div class="band">
 		
 		<!--header begin-->
-		<div class="b_header">
-			
-			<a href="#" class="b_logo"></a>
-
-			<div class="b_menu">
-				<ul>
-					<li><a href="#">item1</a></li>
-					<li><a href="#">item2</a></li>
-					<li><a href="#">item3</a></li>
-					<li><a href="#">item4</a></li>
-				</ul>
-			</div>
-			
-			<!-- селекторы -->
-			<form action="" method="post" class="f_search">
-				<input type="text" class="email" placeholder="Введите Email" value="" />
-				<input type="submit" class="btn" value="Найти" />
-			</form>
+		<header class="header">
 		
-		</div>
+		</header>
 		<!--header end-->
 		
 		<!--main begin-->
-		<div class="b_maincontent">
+		<div class="main-content">
 			
-			<table>
+			<table class="js-add-wrap">
 				<tr>
 					<th>Заголовок 1</th>
 					<th>Заголовок 2</th>
@@ -67,50 +50,49 @@
 			<br />
 			<br />
 			
-			<div class="table_wrap">
-				<table>
-					<tr>
-						<th>Заголовок 1</th>
-						<th>Заголовок 2</th>
-						<th>Заголовок 3</th>
-						<th>Заголовок 4</th>
-					</tr>
-					<tr>
-						<td>Строка 1, запись 1</td>
-						<td>Строка 1, запись 2</td>
-						<td>Строка 1, запись 3</td>
-						<td>Строка 1, запись 4</td>
-					</tr>
-					<tr>
-						<td>Строка 2, запись 1</td>
-						<td>Строка 2, запись 2</td>
-						<td>Строка 2, запись 3</td>
-						<td>Строка 2, запись 4</td>
-					</tr>
-				</table>
-			</div>
-
+			<table class="js-add-wrap">
+				<tr>
+					<th>Заголовок 1</th>
+					<th>Заголовок 2</th>
+					<th>Заголовок 3</th>
+					<th>Заголовок 4</th>
+				</tr>
+				<tr>
+					<td>Строка 1, запись 1</td>
+					<td>Строка 1, запись 2</td>
+					<td>Строка 1, запись 3</td>
+					<td>Строка 1, запись 4</td>
+				</tr>
+				<tr>
+					<td>Строка 2, запись 1</td>
+					<td>Строка 2, запись 2</td>
+					<td>Строка 2, запись 3</td>
+					<td>Строка 2, запись 4</td>
+				</tr>
+			</table>
+			
+			
 			<br />
 			<br />
 
-			<div class="table_adaptive">
-				<div class="table_adaptive_row">
-					<div class="table_adaptive_cell">Заголовок 1</div>
-					<div class="table_adaptive_cell">Заголовок 2</div>
-					<div class="table_adaptive_cell">Заголовок 3</div>
-					<div class="table_adaptive_cell">Заголовок 4</div>
+			<div class="table-adaptive">
+				<div class="table-adaptive__row">
+					<div class="table-adaptive__cell">Заголовок 1</div>
+					<div class="table-adaptive__cell">Заголовок 2</div>
+					<div class="table-adaptive__cell">Заголовок 3</div>
+					<div class="table-adaptive__cell">Заголовок 4</div>
 				</div>
-				<div class="table_adaptive_row">
-					<div class="table_adaptive_cell">Строка 1, запись 1</div>
-					<div class="table_adaptive_cell">Строка 1, запись 2</div>
-					<div class="table_adaptive_cell">Строка 1, запись 3</div>
-					<div class="table_adaptive_cell">Строка 1, запись 4</div>
+				<div class="table-adaptive__row">
+					<div class="table-adaptive__cell">Строка 1, запись 1</div>
+					<div class="table-adaptive__cell">Строка 1, запись 2</div>
+					<div class="table-adaptive__cell">Строка 1, запись 3</div>
+					<div class="table-adaptive__cell">Строка 1, запись 4</div>
 				</div>
-				<div class="table_adaptive_row">
-					<div class="table_adaptive_cell">Строка 2, запись 1</div>
-					<div class="table_adaptive_cell">Строка 2, запись 2</div>
-					<div class="table_adaptive_cell">Строка 2, запись 3</div>
-					<div class="table_adaptive_cell">Строка 2, запись 4</div>
+				<div class="table-adaptive__row">
+					<div class="table-adaptive__cell">Строка 2, запись 1</div>
+					<div class="table-adaptive__cell">Строка 2, запись 2</div>
+					<div class="table-adaptive__cell">Строка 2, запись 3</div>
+					<div class="table-adaptive__cell">Строка 2, запись 4</div>
 				</div>
 			</div>
 		</div>
@@ -120,13 +102,13 @@
 	</div>
 	<!--band end-->
 	
-	<div class="b_clear"></div>
+	<div class="clear"></div>
 </div>
 
 <!--footer begin-->
-<div class="b_footer">
+<footer class="footer">
 
-</div>
+</footer>
 <!--footer end-->
 </body>
 </html>
