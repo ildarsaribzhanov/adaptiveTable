@@ -10,7 +10,7 @@
 			$(document).ready(function () {
 
 				if( options.addWrap === true ) {
-					$(self).wrap('<div style="position: relative; overflow: auto;"></div>');
+					$(self).wrap('<div class="table-adaptive-wrap"></div>');
 					return true;
 				}
 
