@@ -126,7 +126,7 @@ a:hover {
 
 /* footer begin */
 .b_footer {
-	width: 960px;
+	max-width: 960px;
 	height: 100px;
 	position: relative;
 	margin: -100px auto 0;
@@ -148,6 +148,11 @@ a:hover {
 
 /* footer end */
 
+
+.table_wrap {
+	position: relative;
+	overflow: auto;
+}
 
 .table_adaptive {
 	width: 100%;
