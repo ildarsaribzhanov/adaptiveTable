@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+html, body {
+	height: 100%;
+	color: #000;
+}
+
+body, input, textarea {
+	font-family: Arial, serif;
+}
+
+a {
+	color: #000;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
+.b_conteiner {
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.b_band {
+	position: relative;
+	padding: 0 20px;
+	outline: 1px solid red;
+}
+
+/* header begin */
+.b_header {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	outline: 1px solid black;
+}
+
+.b_logo {
+	width: 200px;
+	height: 70px;
+	position: absolute;
+	left: 0;
+	top: 20px;
+	border: 1px dotted black;
+}
+
+/* menu begin */
+.b_menu {
+	position: absolute;
+	top: 20px;
+	left: 300px;
+}
+
+.b_menu ul {
+	position: relative;
+	overflow: hidden;
+	list-style: none;
+}
+
+.b_menu li {
+	float: left;
+	padding: 0 30px 0;
+}
+
+/* menu end */
+.f_search {
+	position: absolute;
+	top: 20px;
+	right: 0;
+}
+
+.email {
+	color: #000;
+}
+
+/* header end */
+
+/* main begin */
+.b_maincontent {
+	min-height: 100px;
+	position: relative;
+	padding: 50px 0;
+	overflow: hidden;
+}
+
+.b_maincontent table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.b_maincontent table th, .b_maincontent table td {
+	border: 1px solid #ccc;
+	position: relative;
+	padding: 10px;
+	text-align: left;
+}
+
+
+/* main end */
+.b_clear {
+	height: 100px;
+	clear: both;
+}
+
+/* footer begin */
+.b_footer {
+	width: 960px;
+	height: 100px;
+	position: relative;
+	margin: -100px auto 0;
+	outline: 1px solid black;
+}
+
+.b_copyright {
+	position: absolute;
+	right: 0;
+	top: 40px;
+}
+
+
+.b_contacts {
+	position: absolute;
+	left: 0;
+	top: 40px;
+}
+
+/* footer end */
+
+
+.table_adaptive {
+	width: 100%;
+	position: relative;
+	display: table;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.table_adaptive_row {
+	width: 100%;
+	position: relative;
+	display: table-row;
+
+}
+
+.table_adaptive_cell {
+	position: relative;
+	padding: 10px;
+	display: table-cell;
+	border-top: 1px solid #ccc;
+	border-left:  1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.table_adaptive_row:first-child .table_adaptive_cell {
+	border-top: none;
+}
+
+.table_adaptive_cell:first-child {
+	border-left: none;
+}
+
+@media all and (max-width: 800px) {
+	.table_adaptive, .table_adaptive_cell, .table_adaptive_row {
+		display: block;
+	}
+}
